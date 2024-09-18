@@ -1,9 +1,9 @@
 package com.nlobo.achoo.models;
 
 public class Location {
-    private double latitude = 34.10929885843292;
+    private double latitude;
 
-    private double longitude = -118.26168031577214;
+    private double longitude;
 
     public Location() {}
     public Location(double latitude, double longitude) {

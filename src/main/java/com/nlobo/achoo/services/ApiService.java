@@ -28,7 +28,7 @@ public class ApiService {
 
         HttpEntity<String> entity = new HttpEntity<>(headers);
 
-        String baseUrl = "https://api.ambeedata.com/latest/by-lat-lng";
+        String baseUrl = "https://api.ambeedata.com/latest/pollen/by-lat-lng";
         String endpoint = String.format("%s?lat=%f&lng=%f", baseUrl, location.getLatitude(), location.getLongitude());
 
         ResponseEntity<String> response = restTemplate.exchange(endpoint, HttpMethod.GET, entity, String.class);

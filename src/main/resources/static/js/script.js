@@ -28,6 +28,8 @@ async function setPosition(position) {
     } catch (error) {
         console.error(error)
     }
+
+    window.location.reload();
 }
 
 /**

@@ -23,7 +23,7 @@ public class ApiService {
     }
 
     public ApiResponse getApiResponse(Location location) throws Exception {
-        HttpHeaders headers = new org.springframework.http.HttpHeaders();
+        HttpHeaders headers = new HttpHeaders();
         headers.set("x-api-key", apiKey);
 
         HttpEntity<String> entity = new HttpEntity<>(headers);
